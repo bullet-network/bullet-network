@@ -44,7 +44,7 @@ contract Prover {
                     }
                 } else if(from == 0) {
                     uint64 tb = uint64(bytes8(bytes10(uint80(bytes10(stateSet[to] & 0xffffffffffffffff0000)) >> 8)));
-                    tb+=amount-uint8(accessList[k][i][16])*1000;
+                    tb+=amount-uint8(accessList[k][i][16])*3000;
                     stateSet[to]=bytes10(abi.encodePacked(bytes8(tb), nonce));
                 } else {
                     uint64 fb = uint64(bytes8(bytes10(uint80(bytes10(stateSet[from] & 0xffffffffffffffff0000)) >> 8)));
@@ -52,7 +52,7 @@ contract Prover {
                         IBondManager(bondManagerAddress).deleteBond(IStateCommitments(stateCommitmentAddress).getBatchStateSubmitter(batchHeight));
                     } else {
                         fb-=amount;
-                        stateSet[to]=bytes10(abi.encodePacked(bytes8((uint64(bytes8(stateSet[to] & 0xffffffffffffffff0000)) >> 8) +amount), nonce));
+                        stateSet[to]=bytes10(abi.encodePacked(bytes8((uint64(bytes8(stateSet[to] & 0xffffffffffffffff0000)) >> 8) +amount-uint8(accessList[k][i][16])*3000), nonce));
                         stateSet[from]=bytes10(abi.encodePacked(bytes8(fb), nonce));
                     }
                 }
