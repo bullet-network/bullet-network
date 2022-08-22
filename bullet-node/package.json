@@ -1,0 +1,29 @@
+{
+  "name": "bullet-network-node",
+  "version": "0.1.0",
+  "description": "P2P node for Bullet Network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bullet-network/bullet-network.git"
+  },
+  "keywords": [
+    "blockchain"
+  ],
+  "author": "The Bullet Network Team",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bullet-network/bullet-network/issues"
+  },
+  "homepage": "https://github.com/bullet-network/bullet-network#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ethers": "5.6.9",
+    "fastify": "^4.5.2",
+    "hardhat": "2.9.9",
+    "level": "^8.0.0"
+  }
+}

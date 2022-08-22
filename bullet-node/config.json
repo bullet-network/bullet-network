@@ -1,0 +1,21 @@
+{
+    "RPC_PORT": 2907,
+    "ENABLE_SEQUENCER": false,
+    "ENABLE_VALIDATOR": false,
+    "ENABLE_RPC": true,
+
+    "addressManagerAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "bondManagerAddress": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+    "l1BridgeAddress": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+    "proverAddress": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
+    "stateCommitmentsAddress": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+    "transactionChainAddress": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+    "batchChallengeAddress": "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318",
+
+    "sequencerURL": "http://localhost:2907",
+    "sequencerAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+
+    "startSyncBlockNumber": 0,
+
+    "jsonrpcurl": "http://localhost:8545"
+}
